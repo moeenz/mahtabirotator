@@ -1,0 +1,24 @@
+{
+    "name": "MahtabiRotator",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "background": {
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://twitter.com/*"],
+            "js": ["jquery.js", "jquery.rotate.js", "content.js"]
+        }
+    ],
+    "permissions": ["activeTab"],
+    "browser_action": {
+        "default_icon": {
+            "19": "img/icon.png"
+        },
+        "default_title": "Mahtabi Rotator",
+        "default_popup": "popup.html"
+    },
+    "web_accessible_resources": [
+        "index.html"
+    ]
+}
